@@ -13,25 +13,25 @@ Total tritium measurements in rainwater in France extracted from the RNM (https:
 
 All the data are extracted from National Network for Environmental Radioactivity Measurements  (https://mesure-radioactivite.fr)
 
-## data format
+## Data format
 All data are in csv format
 
 | Nom de la Colonne | Format de la donnée | Description |
 |-----------|-----------|-----------|
 | Date de début de prélèvement | DD/MM/YYYY  |   |
 | Date de fin de prélèvement  | DD/MM/YYYY  |   |
-| Résultat | string  | Valeur mesurée si dépassant le seuil de significativité, sinon seuil de significativité  |
-| Incertitude | float  | Valeur vide si le résultat est inférireur au seuil de significativité précisé dans la colonne résultat |
-| Unité  | string  | Valeur constante (becquerel par litre)  |
-| Organisme  | string  | Nom de l'organisme aynant réalisé le relevé (10 valeurs distinctes)  |
-| Commune | string  | Nom de la commune dans laquelle le prélèvement a été réalisé |
+| Résultat | string  | Measured value if above significance level, otherwise significance level  |
+| Incertitude | float  | Empty value if the "resultat" is less than the significance threshold specified in the "resultat" column. |
+| Unité  | string  | Constant value (becquerel par litre)  |
+| Organisme  | string  | Name of the organisation that carried out the measure (10 separate values)  |
+| Commune | string  | Name of the commune in which the sample was taken  |
 | Point de prélèvement  | string  |   |
-| Espèce | string  | Valeur constante (especes.eauplui)  |
-| Nature  | string  | Valeur constante (especes.eauplui)  |
-| Radion | string  | Valeur constante (Tritium total)  |
-| Laboratoire  | string  | Nom du laboratoire  39 valeurs distinctes|
-| Sites surveillés | string  | 35 valeurs distinctes (avec des valeurs vides)  |
-| Commentaires  | string  | Type de prélèvement (3 valeurs distinctes) |
+| Espèce | string  | Constant value (especes.eauplui)  |
+| Nature  | string  | Constant value (Eaux douces (eau de pluie, eau de nappe, eau de surface ...))  |
+| Radion | string  | Constant value (Tritium total)  |
+| Laboratoire  | string  | Laboratory name (39 distinct values) |
+| Sites surveillés | string  | 35 distinct values (with empty values)  |
+| Commentaires  | string  | Type of sampling (3 distinct values) |
 
 
 
@@ -45,9 +45,9 @@ You will find below an extract of the dataset /
 | 01/12/2010                   | 01/01/2011                 | <6.2     |                      | becquerel par litre       | EDF - Electricité de France     | BRENNILIS     | station météo Brennilis            | especes.eaupl  | Eaux douces (eau de pluie, eau de nappe, eau de surface ...) | Tritium total | MSIS Laboratoire  | CNPE Brennilis    |                       |
 | 01/02/2010                   | 01/02/2010                 | <6.6     |                      | becquerel par litre       | EDF - Electricité de France     | LOQUEFFRET    | fosse d'exhaure IDT aire TFA       | especes.eaupl  | Eaux douces (eau de pluie, eau de nappe, eau de surface ...) | Tritium total | MSIS Laboratoire  | CNPE Brennilis    |                       |
 
-## Licence
+## License
 
-La licence sous lquelle ce jeu données est publié est Open Data Commons Open Database License v1.0
+The license under which this dataset is published is Open Data Commons Open Database License v1.0.
 
 ## Thanks
 
